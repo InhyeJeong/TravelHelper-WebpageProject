@@ -24,24 +24,41 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 - 로그인 인터셉터
 
 ### 1-1. SignUp / LogIn
+
+<p align="center">
+	<img src="./images/login.png" width="300">
+	<img src="./images/signup.png" width="300">
+</p>
 - 회원가입 기능(password 일치여부 / 전체입력시 가입 가능 / Avata 등) 
 
 ### 1-2. USER MANAGEMENT(ADMIN 계정만 사용가능)
+<p align="center">
+	<img src="./images/usermanagement.png" width="300">
+</p>
 - user level(NORMAL/SILVER/GOLD/ADMIN)별로 사용자 구분
 - admin 계정으로 point 추가/삭제 기능
 
 ### 2. Plan
+<p align="center">
+<img src="./images/plan.png" width="300" >
+	<p>
 - '여행 계획'을 업로드할 수 있는 게시판 페이지
 - 각 게시물 별 **댓글 추가/삭제**기능
 - pagination 기능
 
 ### 3. Review
+<p align="center">
+<img src="./images/review.png" width="300" >
+</p>
 - '여행 후기'를 '사진'으로 업로드할 수 있는 Gallery
 - '날짜별, 조회수별' 검색 기능
 - 업로드한 사진 다운로드 기능
 - pagination 기능
 
 ### 4. Festival Info
+<p align="center">
+<img src="./images/festivalinfo.png" width="300" >
+</p>
 - 공공데이터에서 제공되는 **오픈API(국문 관광정보 서비스)** 로 축제 정보 출력
 - '제목, 조회, 수정일, 인기순,지역별(시), 날짜별'으로 _검색_하는 기능
 
@@ -126,12 +143,3 @@ public class FileView extends AbstractView {
 ### 2. 예시
 
 
-
-<p align="center">
-	<img src="./images/login.png" alt="ddd">
-	<img src="./images/signup.png" >
-	<img src="./images/usermanagement.png" >
-	<img src="./images/plan.png" >
-	<img src="./images/review.png" >
-	<img src="./images/festivalinfo.png" >
-</p>
