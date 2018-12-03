@@ -2,7 +2,7 @@
 
 [**Link**](http://13.209.26.216:8080/travelhelper/)
 Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로드되는 반응형 웹사이트 입니다.
-![ex_screenshot](./images/festivalinfo.png)
+![Main](./images/festivalinfo.png)
 <hr/>
 
 
