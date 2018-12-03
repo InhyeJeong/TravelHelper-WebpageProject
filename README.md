@@ -2,10 +2,10 @@
 
 Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로드되는 반응형 웹사이트 입니다.
 
-# Navbar 설명
+## Navbar 설명
 
-# 1. Plan
+### 1. Plan
 
-# 2. Review
+### 2. Review
 
-# 3. Festival Info
+### 3. Festival Info
