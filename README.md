@@ -1,5 +1,5 @@
 # TravelHelper-WebpageProject
-Link : (13.209.26.216:8080/travelhelper, "link")
+Link : [Link](13.209.26.216:8080/travelhelper, "link")
 
 Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로드되는 반응형 웹사이트 입니다.
 <hr/>
