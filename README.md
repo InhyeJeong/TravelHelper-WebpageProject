@@ -98,7 +98,7 @@ public class FileView extends AbstractView {
 				}
 			});
       </code></pre>
-      <pre><code>
+
       $.get(url, params, function(result){
 				// 결과 응답 데이터는 result로 전달됨.
 				if(result == 'ok'){
@@ -110,7 +110,7 @@ public class FileView extends AbstractView {
 				}else{
 					alert('댓글 작성 실패 : ' + result);
 				}
-			}); </code></pre>
+			});
 
 
 ### 2. 예시
