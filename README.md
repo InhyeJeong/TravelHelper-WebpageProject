@@ -44,12 +44,15 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 ### 1. 코드
 
 #### 사용자 정의 뷰 사용
+
+Review 메뉴에서 목록의 썸네일 이미지, 상세보기의 Carousel 이미지를 [사용자 정의 뷰(FileView)](./TravelHelper/src/main/java/edu/iot/travelhelper/view/FileView)를 사용했습니다.
+
 <pre><code></code></pre>
 
 #### 사용자 정의 태그 사용
 자세한 내용은 [util](./TravelHelper/src/main/webapp/WEB-INF/tags/util) 폴더에 있습니다.
 
-### 페이지네이션
+#### 페이지네이션
 자세한 내용은 [common](./TravelHelper/src/main/webapp/WEB-INF/views/common) 폴더에 있습니다.
 
 <pre><code></code></pre>
