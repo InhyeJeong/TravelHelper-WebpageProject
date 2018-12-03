@@ -47,9 +47,11 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 <pre><code></code></pre>
 
 #### 사용자 정의 태그 사용
-src/main/webapp/WEB-INF/tags/util
-[util](./TravelHelper/src/main/webapp/WEB-INF/tags/util) 폴더에...
+자세한 내용은 [util](./TravelHelper/src/main/webapp/WEB-INF/tags/util) 폴더에 있습니다.
+
 ### 페이지네이션
+자세한 내용은 [util](./TravelHelper/src/main/webapp/WEB-INF/view/common) 폴더에 있습니다.
+
 <pre><code></code></pre>
 
 ### Ajax
