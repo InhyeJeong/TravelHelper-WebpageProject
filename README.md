@@ -9,3 +9,7 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 ### 2. Review
 
 ### 3. Festival Info
+
+## 사용된 기술
+
+## 
