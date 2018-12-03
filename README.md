@@ -9,7 +9,7 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
  html5 / oracle / tomcat8.5 / SpringMVC / DBootstrap /
  Mybatis / JDBC / json / tinymce / Ajax
 
-[**TravelHelper Link**](http://13.209.26.216:8080/travelhelper/)
+* [**TravelHelper Link**](http://13.209.26.216:8080/travelhelper/)
 <p align="center">
 <img src="./images/main.png" width="500">	
 </p>
