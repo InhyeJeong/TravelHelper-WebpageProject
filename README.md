@@ -55,13 +55,9 @@ Mybatis / JDBC / json / tinymce / Ajax
 - pagination 기능
 
 ### 4. Festival Info
-<p align="center">
-<img src="./images/festivalinfo.png" width="300" >
-</p>
 
 <img src="./images/festivalinfo.png" width="300" > | * 공공데이터에서 제공되는 **오픈API(국문 관광정보 서비스)** 로 축제 정보 출력
 
-* 공공데이터에서 제공되는 **오픈API(국문 관광정보 서비스)** 로 축제 정보 출력
 * '제목, 조회, 수정일, 인기순,지역별(시), 날짜별'으로 _검색_하는 기능
 
 
