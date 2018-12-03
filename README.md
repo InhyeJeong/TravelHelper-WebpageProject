@@ -25,31 +25,22 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 
 ### 1-1. SignUp / LogIn
 
-<p align="center">
-	<img src="./images/login.png" width="300">
-	<img src="./images/signup.png" width="300">
-</p>
+
 - 회원가입 기능(password 일치여부 / 전체입력시 가입 가능 / Avata 등) 
 
 ### 1-2. USER MANAGEMENT(ADMIN 계정만 사용가능)
-<p align="center">
-	<img src="./images/usermanagement.png" width="300">
-</p>
+
 - user level(NORMAL/SILVER/GOLD/ADMIN)별로 사용자 구분
-- admin 계정으로 point 추가/삭제 기능
+- admin 계정으로 **point 추가/삭제** 기능
 
 ### 2. Plan
-<p align="center">
-<img src="./images/plan.png" width="300" >
-	<p>
+
 - '여행 계획'을 업로드할 수 있는 게시판 페이지
 - 각 게시물 별 **댓글 추가/삭제**기능
 - pagination 기능
 
 ### 3. Review
-<p align="center">
-<img src="./images/review.png" width="300" >
-</p>
+
 - '여행 후기'를 '사진'으로 업로드할 수 있는 Gallery
 - '날짜별, 조회수별' 검색 기능
 - 업로드한 사진 다운로드 기능
@@ -72,8 +63,8 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 
 #### 사용자 정의 뷰 사용
 
-* Review 메뉴에서 목록의 썸네일 이미지, 상세보기의 Carousel 이미지 출력
-* Review 메뉴에서 상세보기의 Carousel 이미지 다운로드
+* Review 메뉴에서 목록의 썸네일 이미지, 상세보기의 Carousel **이미지 출력**
+* Review 메뉴에서 상세보기의 Carousel **이미지 다운로드**
 
 [사용자 정의 뷰(FileView 및 DownloadView)](./TravelHelper/src/main/java/edu/iot/travelhelper/view)를 사용했습니다.
 
@@ -105,6 +96,7 @@ public class FileView extends AbstractView {
   
 
 #### 사용자 정의 태그 사용
+css를 활용하여 타이틀 애니메이션 적용
 자세한 내용은 [util](./TravelHelper/src/main/webapp/WEB-INF/tags/util) 폴더에 있습니다.
 
 
@@ -112,7 +104,7 @@ public class FileView extends AbstractView {
 자세한 내용은 [common](./TravelHelper/src/main/webapp/WEB-INF/views/common) 폴더에 있습니다.
 
 ### Ajax
-
+* 게시물 삭제 및 댓글 작성 Ajax 처리
 자세한 내용은 [view.jsp](./TravelHelper/src/main/webapp/WEB-INF/views/plan) 폴더에 있습니다.
 <pre><code>
 			$.get(url, params, function(result) {
@@ -140,6 +132,6 @@ public class FileView extends AbstractView {
 			});
 
 
-### 2. 예시
+
 
 
