@@ -56,7 +56,7 @@ Mybatis / JDBC / json / tinymce / Ajax
 
 ### 4. Festival Info
 <p align="center">
-<img src="./images/festivalinfo2.jpg" width="1500">
+<img src="./images/festivalinfo2.jpg" width="1500" >
 </p>
 
 
