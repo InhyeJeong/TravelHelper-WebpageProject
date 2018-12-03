@@ -18,6 +18,8 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 
 
 <br>
+
+
 ## 메뉴별 기능 소개
 <p align="center">
 <img src="./images/navbar.png" >	
@@ -62,7 +64,7 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 
 
 
-
+<br>
 
 ## 사용된 기술
 
@@ -108,7 +110,7 @@ css를 활용하여 타이틀 애니메이션 적용
 #### 페이지네이션
 자세한 내용은 [common](./TravelHelper/src/main/webapp/WEB-INF/views/common) 폴더에 있습니다.
 
-### Ajax
+#### Ajax
 * 게시물 삭제 및 댓글 작성 Ajax 처리
 자세한 내용은 [view.jsp](./TravelHelper/src/main/webapp/WEB-INF/views/plan) 폴더에 있습니다.
 <pre><code>
