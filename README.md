@@ -45,8 +45,39 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 
 #### 사용자 정의 뷰 사용
 
-Review 메뉴에서 목록의 썸네일 이미지, 상세보기의 Carousel 이미지를 [사용자 정의 뷰(FileView)](./TravelHelper/src/main/travelhelper/view/FileView)를 사용했습니다.
+Review 메뉴에서 목록의 썸네일 이미지, 상세보기의 Carousel 이미지를 [사용자 정의 뷰(FileView)](./TravelHelper/src/main/java/edu/iot/travelhelper/view/FileView)를 사용했습니다.
 
+<pre><code>
+/**사용자 정의 뷰*/
+// 파일의 내용을 읽어서 헤더를 골라서 파일의 내용을 직접내보내는 기능
+// 아바타는 이것 사용 x 이미 이미지에 대한 data를 갖고 있음
+@Component("fileView")
+public class FileView extends AbstractView {
+
+	@Override
+	protected void renderMergedOutputModel(
+			Map<String, Object> model,
+			HttpServletRequest request,
+			HttpServletResponse response) throws Exception {
+		
+		String path = (String) model.get("path");
+		String type = (String) model.get("type");
+		
+		File file = new File(path);
+		
+		// 응답 헤더 설정
+		response.setContentType(type);
+		response.setContentLength((int) file.length());
+		response.setHeader("Content-Transfer-Encoding", "binary");
+		
+		// FileUtil에 copy메서드 만들기
+		// 파일 경로를 복사해서 응답보내라는것.
+		//FileUtil.copy(path, response.getOutputStream());
+		/**base 폼에 <!-- Apache Commons IO -->의 부분에 있음*/
+		FileUtils.copyFile(file, response.getOutputStream());
+	}
+	
+}</code></pre>
   
       
 
@@ -54,6 +85,7 @@ Review 메뉴에서 목록의 썸네일 이미지, 상세보기의 Carousel 이�
 
 #### 사용자 정의 태그 사용
 자세한 내용은 [util](./TravelHelper/src/main/webapp/WEB-INF/tags/util) 폴더에 있습니다.
+
 
 #### 페이지네이션
 자세한 내용은 [common](./TravelHelper/src/main/webapp/WEB-INF/views/common) 폴더에 있습니다.
