@@ -39,13 +39,13 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 - user level(NORMAL/SILVER/GOLD/ADMIN)별로 사용자 구분
 - admin 계정으로 **point 추가/삭제** 기능
 
-### 2. Plan
+### 2. Travel Plan
 
 - '여행 계획'을 업로드할 수 있는 게시판 페이지
 - 각 게시물 별 **댓글 추가/삭제**기능
 - pagination 기능
 
-### 3. Review
+### 3. Travel Review
 
 - '여행 후기'를 '사진'으로 업로드할 수 있는 Gallery
 - '날짜별, 조회수별' 검색 기능
