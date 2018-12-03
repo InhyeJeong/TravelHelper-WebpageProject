@@ -56,7 +56,6 @@ src/main/webapp/WEB-INF/tags/util
 <pre><code>
 			$.get(url, params, function(result) {
 				// 결과 응답 데이터는 result로 전달됨
-				// 이곳에서 this는 Ajax핸들러이므로(더 이상 a태그가 아님) this 사용불가
 				if(result == 'ok') {
 					//javascript로 페이지 이동 location
 					location = '../list';
