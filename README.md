@@ -18,7 +18,7 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 
 
 
-## Navbar
+## 메뉴별 기능 소개
 <p align="center">
 <img src="./images/navbar.png" >	
 </p>
@@ -65,7 +65,6 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 
 
 ## 사용된 기술
-### 1. 코드
 
 #### 사용자 정의 뷰 사용
 
