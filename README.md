@@ -5,8 +5,7 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 
 [**TravelHelper Link**](http://13.209.26.216:8080/travelhelper/)
 <p align="center">
-<img src="./images/main.png" width="500">
-	
+<img src="./images/main.png" width="500">	
 </p>
 <hr/>
 
@@ -15,9 +14,10 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 
 ## Navbar
 <p align="center">
-<img src="./images/navbar.png" >
-	
+<img src="./images/navbar.png" >	
 </p>
+
+
 ### 1. Main Page
 - iframe을 활용하여 메인페이지 background에 동영상 재생
 - 공공데이터에서 제공되는 **오픈API(중기예보정보조회서비스)** 가 매일의 날씨 정보 출력
