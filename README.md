@@ -34,7 +34,7 @@ Mybatis / JDBC / json / tinymce / Ajax
 ### 1-1. SignUp / LogIn
 
 
-- 회원가입 기능(password 일치여부 / 전체입력시 가입 가능 / Avata 등) 
+- 회원가입 기능(password 일치 여부 판단 / 전체 form 입력시 가입 가능 / Avata등록 등) 
 
 ### 1-2. USER MANAGEMENT(ADMIN 계정만 사용가능)
 
@@ -61,7 +61,7 @@ Mybatis / JDBC / json / tinymce / Ajax
 
 
 * 공공데이터에서 제공되는 **오픈API(국문 관광정보 서비스)** 로 축제 정보 출력
-* '제목, 조회, 수정일, 인기순,지역별(시), 날짜별'으로 **검색**하는 기능
+* '제목, 조회, 수정일, 인기순,지역별(시), 날짜별' **검색** 기능
 
 
 
