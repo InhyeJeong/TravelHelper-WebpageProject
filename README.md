@@ -6,7 +6,7 @@ Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로�
 *  이 프로젝트의 **Tech Stack**
 <pre><code>
 jQuery / javascript / java / lombok / css3 /
-html5 / oracle / tomcat8.5 / SpringMVC / DBootstrap /
+html5 / oracle / tomcat8.5 / Spring / MDBootstrap /
 Mybatis / JDBC / json / tinymce / Ajax
 </pre></code>
 * [**TravelHelper Link**](http://13.209.26.216:8080/travelhelper/)
