@@ -33,8 +33,8 @@ Mybatis / JDBC / json / tinymce / Ajax
 
 ### 1-1. SignUp / LogIn
 
-
-- 회원가입 기능(password 일치 여부 판단 / 전체 form 입력시 가입 가능 / Avata등록 등) 
+- 회원가입 기능(password 일치 여부 판단 / 전체 form 입력시 가입 가능 / Avata등록 등)
+- 회원가입 시 비밀번호 암호화하여 저장
 
 ### 1-2. USER MANAGEMENT(ADMIN 계정만 사용가능)
 
