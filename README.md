@@ -36,6 +36,47 @@ Mybatis / JDBC / json / tinymce / Ajax
 - 회원가입 기능(password 일치 여부 판단 / 전체 form 입력시 가입 가능 / Avata등록 등)
 - 회원가입 시 비밀번호 암호화하여 저장
 
+<pre><code>
+public class SHA256Util {
+	
+	public static String generateSalt() {
+		Random random = new Random();	// 랜덤 8바이트 데이터 생성(util의 random이용)
+		byte[] salt = new byte[8];
+		random.nextBytes(salt);	// 랜덤한 바이트 숫자로 8바이트를 채워준다. 호출시마다 다른 값이 들어감
+		return byteToHexString(salt);
+	}
+	
+	public static String getEncrypt(String source, String salt) { //매개변수(member.getPassword(), salt)
+
+		byte[] bytes = (source + salt).getBytes();
+		String result = "";
+
+		try {
+			MessageDigest md = MessageDigest.getInstance("SHA-256");
+			md.update(bytes);//update원문
+			
+			byte[] byteData = md.digest();// 32바이트의 새로운 배열 생성
+			// 바이트를 문자열로 변환
+			result = byteToHexString(byteData);
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	// 코드중복 : 바이트를 문자열로 변환
+	public static String byteToHexString(byte[] bytes) {
+		StringBuilder sb = new StringBuilder();
+		for (int i= 0; i<bytes.length; i ++) {
+			sb.append(String.format("%02x",bytes[i]));
+		}
+		return sb.toString();
+	}
+}
+
+</pre></code>
+
+
 ### 1-2. USER MANAGEMENT(ADMIN 계정만 사용가능)
 
 - user level(NORMAL/SILVER/GOLD/ADMIN)별로 사용자 구분
