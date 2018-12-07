@@ -39,20 +39,18 @@ Mybatis / JDBC / json / tinymce / Ajax
 <pre><code>
 public class SHA256Util {
 	public static String generateSalt() {
-		Random random = new Random();	// 랜덤 8바이트 데이터 생성(util의 random이용)
+		Random random = new Random();
 		byte[] salt = new byte[8];
-		random.nextBytes(salt);	// 랜덤한 바이트 숫자로 8바이트를 채워준다. 호출시마다 다른 값이 들어감
+		random.nextBytes(salt);	
 		return byteToHexString(salt);
 	}
-	public static String getEncrypt(String source, String salt) { //매개변수(member.getPassword(), salt)
+	public static String getEncrypt(String source, String salt) { 
 		byte[] bytes = (source + salt).getBytes();
 		String result = "";
 		try {
 			MessageDigest md = MessageDigest.getInstance("SHA-256");
-			md.update(bytes);//update원문
-			
-			byte[] byteData = md.digest();// 32바이트의 새로운 배열 생성
-			// 바이트를 문자열로 변환
+			md.update(bytes);
+			byte[] byteData = md.digest();
 			result = byteToHexString(byteData);
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
@@ -66,6 +64,7 @@ public class SHA256Util {
 		}
 		return sb.toString();
 	}
+	
 }</code></pre>
 
 
