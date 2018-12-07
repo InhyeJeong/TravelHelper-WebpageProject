@@ -59,13 +59,19 @@ public class SHA256Util {
 	}
 	public static String byteToHexString(byte[] bytes) {
 		StringBuilder sb = new StringBuilder();
-		for (int i= 0; i<bytes.length; i ++) {
+		for (int i= 0 ; i < bytes.length; i ++) {
 			sb.append(String.format("%02x",bytes[i]));
 		}
 		return sb.toString();
 	}
 	
-}</code></pre>
+}
+
+
+
+
+
+</code></pre>
 
 
 
