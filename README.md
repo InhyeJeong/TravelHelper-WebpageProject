@@ -167,7 +167,8 @@ css를 활용하여 타이틀 애니메이션 적용
 					alert('삭제 실패 : '+ result);
 				}
 			});
-      ```
+```
+
 ```dart
       $.get(url, params, function(result){
 				// 결과 응답 데이터는 result로 전달됨.
