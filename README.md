@@ -175,7 +175,8 @@ css를 활용하여 타이틀 애니메이션 적용
 				if(result == 'ok'){
 					alert('댓글을 작성했습니다..');
 					$('#comment').val("");
-					$('#comments').append(`<div> <img src=" ${context}/member/avata/`+commentWriterId +`"` + 
+					$('#comments').append(
+						`<div> <img src=" ${context}/member/avata/`+commentWriterId +`"`+ 
 						`class="rounded-circle avata-small avata-sm">` +
 						commentWriterId + ` : ` + commentContent + `</div><br>`);
 				}else{
