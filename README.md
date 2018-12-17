@@ -75,18 +75,15 @@ public class SHA256Util {
 
 ### 1-2. USER MANAGEMENT(ADMIN 계정만 사용가능)
 
+- user level(NORMAL/SILVER/GOLD/ADMIN)별로 사용자 구분
 <img src="./images/th_member.JPG" >	
+- admin 계정 또는 사용자가 사용자 정보 수정 기능
 <img src="./images/member_edit.jpg" >
+- admin 계정으로 **point 추가/삭제** 기능
 <p align="center">
-<img src="./images/th_point.JPG" >	
-</p>
-<p align="center">
-<img src="./images/th_point.JPG" >	
+<img src="./images/th_point.JPG" width="200" >	
 </p>
 
-- user level(NORMAL/SILVER/GOLD/ADMIN)별로 사용자 구분
-- admin 계정으로 **point 추가/삭제** 기능
-- admin 계정 또는 사용자가 사용자 정보 수정 기능
 ### 2. Travel Plan
 
 - '여행 계획'을 업로드할 수 있는 게시판 페이지
