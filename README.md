@@ -76,7 +76,7 @@ public class SHA256Util {
 ### 1-2. USER MANAGEMENT(ADMIN 계정만 사용가능)
 
 <img src="./images/th_member.JPG" >	
-<img src="./images/member_edit.JPG" >
+<img src="./images/member_edit.jpg" >
 <p align="center">
 <img src="./images/th_point.JPG" >	
 </p>
