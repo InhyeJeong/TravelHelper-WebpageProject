@@ -4,11 +4,12 @@
 Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로드되는 반응형 웹사이트 입니다.
 * 2018년 9월 ~ (진행중)
 *  이 프로젝트의 **Tech Stack**
-<pre><code>
+```dart
 jQuery / javascript / java / lombok / css3 /
 html5 / oracle / tomcat8.5 / Spring / MDBootstrap /
 Mybatis / JDBC / json / tinymce / Ajax
-</pre></code>
+```
+
 * [**TravelHelper Link**](http://13.209.26.216:8080/travelhelper/)
 <p align="center">
 <img src="./images/main.png" width="500">	
@@ -33,8 +34,44 @@ Mybatis / JDBC / json / tinymce / Ajax
 
 ### 1-1. SignUp / LogIn
 
+- 회원가입 기능 (password 일치 여부 판단 / 전체 form 입력시 가입 가능 / Avata등록 등)
+- 회원가입 시 **비밀번호 암호화**하여 저장
 
-- 회원가입 기능(password 일치 여부 판단 / 전체 form 입력시 가입 가능 / Avata등록 등) 
+```dart
+public class SHA256Util {
+	public static String generateSalt() {
+		Random random = new Random();
+		byte[] salt = new byte[8];
+		random.nextBytes(salt);	
+		return byteToHexString(salt);
+	}
+	public static String getEncrypt(String source, String salt) { 
+		byte[] bytes = (source + salt).getBytes();
+		String result = "";
+		try {
+			MessageDigest md = MessageDigest.getInstance("SHA-256");
+			md.update(bytes);
+			byte[] byteData = md.digest();
+			result = byteToHexString(byteData);
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+	public static String byteToHexString(byte[] bytes) {
+		StringBuilder sb = new StringBuilder();
+		for (int i= 0 ; i < bytes.length; i ++) {
+			sb.append(String.format("%02x",bytes[i]));
+		}
+		return sb.toString();
+	}
+	
+}
+
+
+```
+
+
 
 ### 1-2. USER MANAGEMENT(ADMIN 계정만 사용가능)
 
@@ -69,10 +106,8 @@ Mybatis / JDBC / json / tinymce / Ajax
 
 * 각 Card의 Map버튼 클릭시 **구글맵에서 위치 표시** 기능
 
-
-
-
 <br>
+
 
 ## 사용된 기술
 
@@ -83,7 +118,7 @@ Mybatis / JDBC / json / tinymce / Ajax
 
 [사용자 정의 뷰(FileView 및 DownloadView)](./TravelHelper/src/main/java/edu/iot/travelhelper/view)를 사용했습니다.
 
-<pre><code>
+```dart
 @Component("fileView")
 public class FileView extends AbstractView {
 
@@ -107,7 +142,8 @@ public class FileView extends AbstractView {
 		FileUtils.copyFile(file, response.getOutputStream());
 	}
 	
-}</code></pre>
+}
+```
   
 
 #### 사용자 정의 태그 사용
@@ -121,7 +157,7 @@ css를 활용하여 타이틀 애니메이션 적용
 #### Ajax
 * 게시물 삭제 및 댓글 작성 Ajax 처리
 자세한 내용은 [view.jsp](./TravelHelper/src/main/webapp/WEB-INF/views/plan) 폴더에 있습니다.
-<pre><code>
+```dart
 			$.get(url, params, function(result) {
 				// 결과 응답 데이터는 result로 전달됨
 				if(result == 'ok') {
@@ -131,21 +167,21 @@ css를 활용하여 타이틀 애니메이션 적용
 					alert('삭제 실패 : '+ result);
 				}
 			});
-      </code></pre>
+```
 
+```dart
       $.get(url, params, function(result){
 				// 결과 응답 데이터는 result로 전달됨.
 				if(result == 'ok'){
 					alert('댓글을 작성했습니다..');
 					$('#comment').val("");
-					$('#comments').append(`<div> <img src=" ${context}/member/avata/`+commentWriterId +`"` + 
+					$('#comments').append(
+						`<div> <img src=" ${context}/member/avata/`+commentWriterId +`"`+ 
 						`class="rounded-circle avata-small avata-sm">` +
 						commentWriterId + ` : ` + commentContent + `</div><br>`);
 				}else{
 					alert('댓글 작성 실패 : ' + result);
 				}
 			});
-
-
-
+```
 
