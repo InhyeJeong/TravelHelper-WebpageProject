@@ -1,4 +1,4 @@
-# [**TravelHelper-WebpageProject**](http://172.31.26.99:8080/travelhelper/)
+# [**TravelHelper-WebpageProject**](http://13.59.72.211:8080/travelhelper/)
 
 
 Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로드되는 반응형 웹사이트 입니다.
@@ -10,7 +10,7 @@ html5 / oracle / tomcat8.5 / Spring / MDBootstrap /
 Mybatis / JDBC / json / tinymce / Ajax
 ```
 
-* [**TravelHelper Link**](http://172.31.26.99:8080/travelhelper/)
+* [**TravelHelper Link**](http://13.59.72.211:8080/travelhelper/)
 <p align="center">
 <img src="./images/main.png" width="500">	
 </p>
