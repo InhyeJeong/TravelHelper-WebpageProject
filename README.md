@@ -1,5 +1,5 @@
 # [**TravelHelper-WebpageProject**](http://3.17.49.226:8080/travelhelper/)
-
+ 현재 웹 사이트 url 연결 중지 됨
 
 Spring MVC 패턴으로 만든 여행계획, 후기 및 축제 정보가 업로드되는 반응형 웹사이트 입니다.
 * 2018년 9월 ~ (진행중)
